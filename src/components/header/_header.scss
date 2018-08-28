@@ -1,0 +1,117 @@
+.topbar {
+  padding: 38px 0px 26px 0px;
+  position: relative;
+  
+  @media (min-width: 768px) and (max-width: 991.98px) {     
+    padding: 38px 0px 0px 0px!important;
+  }
+
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    
+    padding: 38px 0px 0px 0px;
+    
+  }
+}
+
+.menu_container_wrap {
+  display: flex;
+  justify-content: flex-start;
+  @media (min-width: 768px) and (max-width: 991.98px) {     
+    justify-content: flex-start;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {     
+    justify-content: center;
+    padding-bottom: 28px;
+  }
+  @media (max-width: 575.98px) { 
+    justify-content: center;
+    padding-bottom: 28px; 
+  }
+}
+
+.menu_info_wrap {
+  display: flex;
+  justify-content: flex-end;
+  @media (min-width: 768px) and (max-width: 991.98px) {     
+    justify-content: flex-start;
+  }
+  @media (min-width: 576px) and (max-width: 767.98px) {     
+    justify-content: center;
+    padding-bottom: 28px;
+  }
+  @media (max-width: 575.98px) { 
+    justify-content: center;
+    padding-bottom: 28px; 
+  }
+}
+
+.contacts {
+  display: flex;
+  justify-content: flex-start;
+  @media (min-width: 768px) and (max-width: 991.98px) {     
+      justify-content: flex-end;
+    } 
+
+  @media (min-width: 576px) and (max-width: 767.98px) {     
+    justify-content: center;
+    padding-top: 28px;
+  }  
+  
+  @media (max-width: 575.98px) { 
+    justify-content: center;
+    padding-top: 28px; 
+  }
+}
+
+.social_wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 62%;
+  
+  @media (min-width: 768px) and (max-width: 991.98px) {    
+      width: 30%;    
+  }
+
+  @media (min-width: 576px) and (max-width: 767.98px) { 
+    width: 18%;    
+    padding-top: 28px;    
+  } 
+
+  @media (max-width: 575.98px) { 
+    width: 18%;    
+    padding-top: 28px;   
+  }
+}
+
+.menu_info,
+.contacts_link,
+.contacts_icon,
+.social_link {
+  color: $text-grey-main;
+  @include rem(14);
+  font-weight: 400;
+}
+
+.contacts_description {
+  align-self: end;
+  margin-left: 8px;
+  vertical-align: top;
+}
+
+.contacts_link,
+.contacts_icon,
+.social_link {
+  transition: color 0.2s ease-in-out;
+}
+
+.contacts_link:hover,
+.social_link:hover {
+  color: $secondary-color;
+  text-decoration: none;
+}
+
+.fas,
+.fab {
+  @include rem(24);
+  padding: 0;
+}

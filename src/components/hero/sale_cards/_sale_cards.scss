@@ -1,0 +1,145 @@
+.sale-cards {
+  transform: translateY(185px); 
+
+  @media (min-width: 992px) and (max-width: 1199.98px) { 
+    transform: translateY(165px); 
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) { 
+    transform: translateY(100px);    
+   } 
+   
+   @include media-breakpoint-down(sm) { 
+    transform: translateY(90px);
+   }
+}
+
+.sales-card-col {
+  @include media-breakpoint-down(sm) { 
+    margin-bottom: 20px;
+   }
+} 
+
+.sales-card_wrap {
+  height: 100%;
+  display: flex;
+  flex-direction: column;   
+}
+
+.sales-card_top {
+  display: flex;
+  background-color: #fff;  
+}
+
+.sale-card-top-img_wrap {
+    
+  @include media-breakpoint-down(sm) { 
+    margin-right: 90px;
+   }
+
+}
+
+.sale-card-top-img_picture {
+  width: 100%;  
+}
+
+.sales-card_top-price_wrap {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;  
+  padding: 68px 0px 75px 0px;
+  
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    padding: 60px 0px 55px 0px;
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) { 
+    padding: 20px 0px 25px 0px;
+   }   
+}
+
+.sales-card_top-price-crossed {
+  @include rem(18);
+  color: $text-grey-second;
+  font-weight: 700;
+  align-self: right;
+  text-decoration: line-through;
+  text-align: right;
+  padding-bottom: 10px;
+  
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    padding-right: 13px;
+  }
+
+  @include media-breakpoint-down(sm) { 
+    display: block; 
+    text-align: center;    
+   }
+
+}
+
+.sales-card_top-price-main {
+  font-family: PlayfairDisplay, serif;
+  color: $text-black;
+  @include rem(36);
+  font-weight: 900;
+  text-align: right;
+
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    text-align: center;
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) { 
+    @include rem(30);
+   }
+
+   @include media-breakpoint-down(sm) { 
+    display: block;    
+    @include rem(40);
+   }   
+}
+
+.sales-card_bottom {
+  background-color: $main-color;
+  padding: 40px 40px;
+  text-align: center;
+  transition: background-color, 0.2s ease-in-out;
+  flex: 1 0;
+  
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    padding: 30px 30px;
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    padding: 10px 5px 10px 5px;
+  }
+  
+}
+
+.sales-card_bottom:hover {
+  background-color: #2a2a2a;
+  color: $text-white;
+}
+
+.sales-card_link {
+  color: $text-white;
+  font-family: PlayfairDisplay;
+  @include rem(18);
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    @include rem(16);
+  }
+
+  @include media-breakpoint-down(sm) { 
+    @include rem(25);
+    
+   }
+
+}
+
+.sales-card_link:hover {
+  color: $text-white;
+}

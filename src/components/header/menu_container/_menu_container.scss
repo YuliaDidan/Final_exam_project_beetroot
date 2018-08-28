@@ -1,0 +1,27 @@
+.header-menu_container {
+  text-align: start;
+}
+
+.header-dropdown-menu {
+  padding: 10px 40px 10px 20px;
+}
+
+ .modal-body {
+  z-index: 99999999;
+} 
+
+.menu-toogle {
+  color: $accent-color;
+  @include rem(24);
+  transition: color 0.2s ease-in-out;
+}
+
+.menu-toogle:hover {
+  color: $text-black;
+}
+
+.menu_btn:focus,
+.menu_btn:active {
+  outline: none !important;
+  box-shadow: none;
+}

@@ -1,0 +1,50 @@
+.hero-block {
+  // background: center center no-repeat/cover;
+  // background-image: url("../img/hero.jpg");
+  // background-color: $text-black;
+  // z-index: -999;
+}
+
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
+}
+
+.hero-content {
+  position: relative;
+  padding-top: 205px;
+  padding-bottom: 50px;
+
+  @media (min-width: 768px) and (max-width: 991.98px) { 
+    padding-top: 90px;
+    padding-bottom: 10px;
+   }
+
+   @include media-breakpoint-down(sm) { 
+    padding-top: 150px;
+    padding-bottom: 10px;
+  }
+
+}
+
+.hero-title {
+  font-family: PlayfairDisplay;
+  @include rem(60);
+  color: $text-white;
+  font-weight: 900;
+  letter-spacing: 10px;
+
+  @media (min-width: 768px) and (max-width: 991.98px) { 
+    @include rem(50);
+    letter-spacing: 6px;
+   }
+
+   @include media-breakpoint-down(sm) { 
+      @include rem(45);
+      letter-spacing: 5px;
+    }
+}
+
+.sale-cards_wrap {
+  width: 100%;
+}

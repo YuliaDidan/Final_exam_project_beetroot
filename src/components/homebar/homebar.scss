@@ -1,0 +1,50 @@
+.homebar {
+    width: 100%; 
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+    
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+}
+
+.homebar-nav-btn_wrap {
+    justify-content: flex-start;
+}
+
+.homebar-btn:focus {
+    box-shadow: 0 0 5px $secondary-color!important; 
+    outline: none !important;
+    box-shadow: none;
+}
+
+.homebar-toogle {
+    color: $text-black;
+    @include rem(24);
+}
+
+.homebar-toogle-title {
+    @include rem(18);
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.homebar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.homebar-item:hover {
+    background-color: $secondary-color;
+}
+
+.homebar-link {
+    color: $accent-color;
+    font-weight: 700;
+}
+
+.homebar-link:hover {
+    color: $text-white;
+}
+
+

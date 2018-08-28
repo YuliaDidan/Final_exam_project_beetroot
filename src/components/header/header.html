@@ -1,0 +1,51 @@
+<header>
+    <div class="container topbar">
+        <div class="row no-gutters">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <div class="row no-gutters">
+                        <div class="col-lg-2 col-md-12 menu_container_wrap">
+                            {% include 'components/header/menu_container/menu_container.html' %}
+                        </div>
+                        <div class="col-lg-10 col-md-12 menu_info_wrap">
+                            <span class="menu_info">Free shipping on all orders above $100</span>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    {% include 'components/header/logo/logo.html' %}
+                </div>
+                
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <div class="row no-gutters">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="contacts">
+                                <span class="contacts_icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </span>
+                                <a href="tel:+380999999999" class="contacts_link ">
+                                    <span class="contacts_description">
+                                        1-800-1234-567
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 d-flex justify-content-lg-end justify-content-md-end justify-content-sm-center justify-content-center">
+                            <div class="social_wrap">
+                                <a href="#" class="social_link">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social_link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social_link">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>           
+            </div> 
+            {% include 'components/header/nav/nav.html' %}
+        </div>               
+</header>

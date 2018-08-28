@@ -1,0 +1,12 @@
+{% extends 'template.html' %}
+{% set pageName = 'homepage' %}
+{% block title %}
+    My project
+{% endblock %}
+{% block content %}
+    {% include 'components/hero/hero.html' %}
+    {% include 'components/featured/featured.html' %}
+    {% include 'components/popular/popular.html' %}
+    {% include 'components/posts/posts.html' %}
+    {% include 'components/map/map.html' %}
+{% endblock %}
