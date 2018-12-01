@@ -1,8 +1,10 @@
 .hero-block {
-  // background: center center no-repeat/cover;
-  // background-image: url("../img/hero.jpg");
-  // background-color: $text-black;
-  // z-index: -999;
+  @media (max-width: 575.98px) {
+    background: center center no-repeat/cover;
+    background-image: url("../img/hero.jpg");
+    background-color: $text-black;
+    z-index: -999;}
+  
 }
 
 .parallax-window {
